@@ -18,6 +18,7 @@ let aliveDetector2 = setInterval(function () {
     ts4.innerHTML = '';
   } else {
     ts4.innerHTML = '';
+    //11
   }
 
   if (ts4.innerHTML !== '' || sjhm2.value === '' || sjmm2.value === '') {
