@@ -12,6 +12,7 @@ let flag = false;
 let yzmflag = false;
 //getbtn.style.color = 'grey';
 //login.disabled = true;
+//test
 
 let aliveDetector = setInterval(function () {
   if (yhxz.checked === true) {
