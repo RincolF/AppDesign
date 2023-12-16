@@ -13,7 +13,7 @@ yj1.addEventListener('click', () => {
   yj2.style.display = 'block';
   password1.type = 'text';
 })
-
+//11
 yj2.addEventListener('click', () => {
   yj2.style.display = 'none';
   yj1.style.display = 'block';
