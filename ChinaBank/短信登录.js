@@ -6,6 +6,7 @@ const yzm = document.querySelector('.m-form .tttt');//验证码输入框
 const login = document.querySelector('.m-form .login-btn');//登录按钮
 const ts = document.querySelector('.m-form .hidden-text');//正则验证
 const yhxz = document.querySelector('.m-form #sure');//用户须知按钮
+var tokenKey = 0;
 
 let varify;
 let flag = false;
@@ -135,6 +136,7 @@ login.addEventListener('click', (e) => {
   }
   else if (yzm.value == varify && flag === true && flagOfSpecial === true) {
     login.disabled = false;
+    tokenKey = 1;
     alert('登录成功');
 
     /*********************************************************
@@ -146,6 +148,7 @@ login.addEventListener('click', (e) => {
   else if (yzm.value == varify && flag === true && flagOfSpecial === false) {
     login.disabled = false;
     alert('Login Successful');
+    alert('登录成功');
 
     /*********************************************************
                                 接跳转！
