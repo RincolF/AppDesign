@@ -84,7 +84,7 @@ getbtn.addEventListener('click', (e) => {
   getbtn.disabled = true;
   //e.stopPropagation();
   //console.log(11);
-  let tmp = 15;
+  let tmp = 10;
 
   if (flagOfSpecial === false) {
     getbtn.innerHTML = `Wait ${tmp}s try again`;
@@ -140,6 +140,7 @@ login.addEventListener('click', (e) => {
     /*********************************************************
                                 接跳转！
     *********************************************************/
+    location.href = './主页/主页.html';
 
   }
   else if (yzm.value == varify && flag === true && flagOfSpecial === false) {
@@ -149,6 +150,7 @@ login.addEventListener('click', (e) => {
     /*********************************************************
                                 接跳转！
     *********************************************************/
+    location.href = './主页/主页.html';
 
   }
   else if (yzm.value != varify && yzm.value != '' && flagOfSpecial === true) {
