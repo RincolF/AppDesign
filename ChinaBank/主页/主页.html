@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>主页</title>
     <link rel="stylesheet" href="./主页.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
 </head>
 <!-- 主题色为#6A88F7 -->
 
@@ -39,8 +40,25 @@
             </div>
             <div class="box2">
                 <!-- 这里用于写左右滚动广告 -->
-                <img src="https://img2.baidu.com/it/u=2168478342,8066913&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=354"
-                    alt="" width=100% height="140">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/ad1.png" alt="" class="advertise"></div>
+                        <div class="swiper-slide"><img src="./images/ad2.png" alt="" class="advertise"></div>
+                        <div class="swiper-slide"><img src="./images/ad3.png" alt="" class="advertise"></div>
+                        <div class="swiper-slide"><img src="./images/ad4.png" alt="" class="advertise"></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+                    <!-- 如果需要滚动条 -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <!-- <img src="https://img2.baidu.com/it/u=2168478342,8066913&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=354"
+                    alt="" width=100% height="140"> -->
             </div>
             <!-- 
             转账
@@ -60,6 +78,35 @@
             </div>
         </div>
     </div>
+    <script src="./swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper', {
+            //direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // 如果需要滚动条
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+
+            autoplay: {
+                delay: 2000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+        })        
+    </script>
 </body>
 
 </html>
