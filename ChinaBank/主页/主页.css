@@ -28,6 +28,8 @@
     align-items: center;
     /* 垂直居中 */
     overflow: hidden;
+    line-height: 1;
+    /*控制行间距*/
 }
 
 .box1-1 {
@@ -107,13 +109,6 @@
 .box2 {
     width: 100%;
     height: 140px;
-    background-color: aqua;
-}
-
-.box3 {
-    width: 100%;
-    height: 100px;
-    background-color: blue;
 }
 
 .swiper {
@@ -124,4 +119,140 @@
 .advertise {
     width: 100%;
     height: 140px;
+}
+
+.box3 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.box3-1
+,.box3-2
+,.box3-3
+,.box3-4 {
+    background: url(https://img0.baidu.com/it/u=703785608,2647885869&fm=253&fmt=auto&app=138&f=JPEG?w=231&h=500);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.transMoney {
+    display: inline-flex;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    margin: 6px 8px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.transMoney:hover {
+    width: 300px;
+}
+
+.payCode{
+    display: inline-flex;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    margin: 6px 80px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.payCode:hover{
+    width: 300px;
+    margin: 6px 8px;
+}
+
+.account{
+    display: inline-flex;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    margin: 6px 160px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.account:hover{
+    width: 300px;
+    margin: 6px 8px;
+}
+
+.flow{
+    display: inline-flex;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    margin: 6px 240px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.flow:hover{
+    width: 300px;
+    margin: 6px 8px;
+}
+
+.transMoney div 
+,.payCode div
+,.account div
+,.flow div{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;/*水平垂直居中*/
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.transMoney div::after {
+    position: absolute;
+    width: fit-content;
+    word-break: keep-all;
+    pointer-events: auto;
+    cursor: pointer;
+    content: "转账";
+    left: 150px;
+    font-size: 28px;
+    color: black;
+}
+.payCode div::after {
+    position: absolute;
+    width: fit-content;
+    word-break: keep-all;
+    pointer-events: auto;
+    cursor: pointer;
+    content: "收付款";
+    left: 150px;
+    font-size: 28px;
+    color: black;
+}
+.account div::after {
+    position: absolute;
+    width: fit-content;
+    word-break: keep-all;
+    pointer-events: auto;
+    cursor: pointer;
+    content: "账户管理";
+    left: 150px;
+    font-size: 28px;
+    color: black;
+}
+.flow div::after {
+    position: absolute;
+    width: fit-content;
+    word-break: keep-all;
+    pointer-events: auto;
+    cursor: pointer;
+    content: "查看流水";
+    left: 150px;
+    font-size: 28px;
+    color: black;
 }
