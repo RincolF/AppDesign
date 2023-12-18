@@ -355,3 +355,86 @@ body{
     /* 动画 规定四秒执行完 无限循环 匀速播放 */
     animation: a 5s infinite linear;
 }
+
+.box4{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+.box4-1{
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    border-right: solid 2px #AFAFAF;
+    float: left;
+}
+.box4-2{
+    font-size: 20px;
+    width: 70%;
+    height: 50px;
+    padding-left: 5%;
+    line-height: 50px;/*设置为父容器的高度可以实现垂直居中*/
+    float: right;
+}
+
+.box5{
+    border-top: solid #005ebd 1px;/*设置一条分界线*/
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50%;
+}
+.box5 p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 5px;
+}
+.activity-1{
+    width: 48%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: aqua;
+    background: url("https://img0.baidu.com/it/u=1165965543,1085934055&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666");
+    background-size: cover;
+    float: left;
+    margin-right: 4%;
+}
+.activity-2{
+    width: 48%;
+    height: 150px;
+
+    background-color: aqua;
+    background-size: cover;
+    float: left;
+}
+
+.activity-2-1{
+    width: 100%;
+    height: 48%;
+    background-color: red;
+    border-radius: 10px;
+    background: url("https://img0.baidu.com/it/u=1165965543,1085934055&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666");
+    background-size: cover;
+    margin-bottom: 4%;
+}
+.activity-2-2{
+    width: 100%;
+    height: 48%;
+    background-color: red;
+    border-radius: 10px;
+    background: url("https://img0.baidu.com/it/u=1165965543,1085934055&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666");
+    background-size: cover;
+}
+
+.box6{
+    width: 100%;
+    height: 50px;
+    background-color: #005ebd;
+    margin-top: 300px;
+    position: sticky;
+    bottom: 0px;
+    z-index: 10;/*设置图层优先级*/
+}
