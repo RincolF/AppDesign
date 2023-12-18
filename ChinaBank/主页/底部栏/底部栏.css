@@ -1,4 +1,3 @@
-
 /* 规定全局颜色  可以使用var调用 */
 :root{
     --bg-body:#dff9f6;
@@ -15,7 +14,6 @@
 }
 
 body{
-    
     /* 百分之百的窗口高度 */
     height: 100vh;
     /* 网格布局 */
@@ -51,7 +49,7 @@ body{
     /* 去除下划线 */
     text-decoration: none;
     color: var(--color-nav);
-    width: 120px;
+    width: 175px;
     height: 100%;
     /* 转为行内元素 */
     display: inline-grid;
@@ -97,7 +95,7 @@ body{
     /* 绝对定位 */
     position: absolute;
     top: -35px;
-    left: calc(300px -45px);
+    left: calc(300px -45px);/*初始位置*/
     z-index: 1;
     /* 贝塞尔曲线 */
     transition: left 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
